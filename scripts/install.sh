@@ -63,8 +63,10 @@ echo -e "${GREEN}✓ Native messaging host installed${NC}"
 
 # Copy MCP server
 cp "$SCRIPT_DIR/mcp-server/server.py" "$INSTALL_DIR/mcp-server/"
+cp "$SCRIPT_DIR/mcp-server/stdio_wrapper.py" "$INSTALL_DIR/mcp-server/"
 cp "$SCRIPT_DIR/mcp-server/mcp_config.json" "$INSTALL_DIR/mcp-server/"
 chmod +x "$INSTALL_DIR/mcp-server/server.py"
+chmod +x "$INSTALL_DIR/mcp-server/stdio_wrapper.py"
 echo -e "${GREEN}✓ MCP server installed${NC}"
 
 # Copy agent
